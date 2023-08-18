@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2 mt-3">
+            <h2>Yapılacak İçerik Ekleme</h2>
+            <form [formGroup]="todoForm" (ngSubmit)="add()" action="">
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">&#187;</span>
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="floatingInputGroup1" formControlName="content" placeholder="İçerik">
+                      <label for="floatingInputGroup1">İçerik</label>
+                    </div>
+                  </div>
+
+<!-- 
+                <div class="mb-3">
+                    <label for="">İçerik</label>
+                    <textarea class="form-control" formControlName="content"></textarea>
+                </div> -->
+                <button class="btn btn-primary">Kaydet</button>
+            </form>
+        </div>
+    </div>
+</div>
